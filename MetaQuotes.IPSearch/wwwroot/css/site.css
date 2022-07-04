@@ -1,0 +1,109 @@
+﻿html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+body {
+    font-weight: 400;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    line-height: 160%;
+    min-height: 100vh;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    margin: 0 auto;
+}
+
+container, header {
+    display: flex;
+    flex-direction: row;
+}
+
+container {
+    min-height: calc(100% - 80px);
+}
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid grey;
+    }
+
+/* header */
+
+header {
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    vertical-align: middle;
+    background: #d15aac;
+    color: white;
+}
+
+/* menu */
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: #7e82a8;
+    color: white;
+}
+
+.left-menu > .link {
+   vertical-align: middle;
+   line-height: 50px;
+}
+
+    .left-menu.link:hover {
+        background: #b1b4cc;
+    }
+
+
+
+/* validation */
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+

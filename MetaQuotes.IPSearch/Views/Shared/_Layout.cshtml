@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <!--
+    <environment include="Staging,Production">
+        <link rel="stylesheet" href="~/css/site.min.css" />
+        <script src="/js/main.min.js" defer="defer" type="text/javascript"></script>
+    </environment>  --> 
+</head>
+<body>
+    <header><div>Geo search</div></header>
+    <container>
+        @RenderBody()
+    </container>
+    <footer>
+        MadeBy: Maria Voronina at 2022
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
